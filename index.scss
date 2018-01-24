@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 400;
+}
+
+.GiveawayButtonContainer {
+  font-family: 'Yu Gothic';
+  position: relative;
+}
+
+button.GiveawayButtonContainer__button {
+  position: relative;
+  background: none;
+  background-color: rgb(44, 168, 206);
+  transition: background-color 0.4s linear;
+  border: 1px rgb(44, 168, 206) solid;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+button.GiveawayButtonContainer__button--active {
+  background-color: rgb(116, 177, 196);
+  border: 1px rgb(44, 168, 206) solid;
+}
+
+button.GiveawayButtonContainer__button--loading {
+  .spinner {
+    display: block;
+  }
+
+  .GiveawayButtonContainer__title {
+    visibility: hidden;
+  }
+}
+
+button.GiveawayButtonContainer__button--success {
+  background-color: rgb(58, 206, 44);
+  border-color: rgb(58, 206, 44);
+}
+
+button.GiveawayButtonContainer__button--failure {
+  background-color: rgb(206, 63, 44);
+  border-color: rgb(206, 63, 44);
+}
+
+span.GiveawayButtonContainer__symbol {
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+.GiveawayPopover {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  flex-flow: column;
+  top: 30px;
+}
+
+svg.GiveawayPopover__tip {
+  transform: translateX(30px);
+}
+
+polygon.GiveawayPopover__tipShape {
+  fill: rgb(44, 168, 206);
+}
+
+polygon.GiveawayPopover__tipShape--failure {
+  fill: rgb(206, 63, 44);
+}
+
+div.GiveawayPopover__body {
+  position: relative;
+  padding: 10px 20px 20px;
+  border-radius: 3px;
+  border: 2px solid rgb(44, 168, 206);
+  width: 300px;
+}
+
+div.GiveawayPopover__body--failure {
+  border-color: rgb(206, 63, 44);
+}
+
+div.GiveawayPopover__sendAmount {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+div.GiveawayPopover__sendAmountGroup {
+  display: flex;
+
+  .GiveawayButtonContainer__button {
+    font-size: 10px;
+    margin: 0;
+    float: right;
+  }
+}
+
+span.GiveawayPopover__sendAmount__symbol {
+  color: rgb(54, 54, 54);
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type=number].GiveawayButtonContainer__input {
+  font-size: 14px;
+  width: 196px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  height: 25px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  outline: none;
+}
+
+
+div.GiveawayPopover__submit {
+  button {
+    padding: 10px 15px;
+  }
+}
+
+div.GiveawayPopover__balance > p {
+  color: rgb(105, 105, 105);
+  margin: 0;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+p.GiveawayPopover__accounts__address {
+  font-size: 12px;
+  width: 60px;
+  color: rgb(110, 110, 110);
+  font-weight: 100;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+div.GiveawayPopover__accounts {
+  display: flex;
+  background-color: #fff;
+  padding-top: 20px;
+
+  p {
+    line-height: 30px;
+    margin: 0 8px;
+  }
+}
+
+img.GiveawayPopover__accounts__avatar {
+  border-radius: 15px;
+  width: 30px;
+}
+
+div.GiveawayPopover__accounts__yours {
+  display: flex;
+  width: 50%;
+}
+
+div.GiveawayPopover__accounts__theirs {
+  display: flex;
+  width: 50%;
+  flex-direction: row-reverse;
+
+}
+
+div.spinner {
+  display: none;
+  text-align: center;
+  position: absolute;
+  left: 41%;
+  top: 4px;
+}
+
+div.spinner > div {
+  width: 6px;
+  height:6px;
+  background-color: rgb(255, 255, 255);
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+div.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+div.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}

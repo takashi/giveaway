@@ -1,0 +1,35 @@
+{
+  "name": "giveaway",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build src/index.js"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "cleanslate": "https://github.com/premasagar/cleanslate",
+    "ethereum-blockies": "ethereum/blockies",
+    "ethjs": "^0.3.3",
+    "human-standard-token-abi": "^1.0.2",
+    "picostyle": "^0.2.1",
+    "preact": "^8.2.7",
+    "preact-compat": "^3.17.0",
+    "react-popover": "^0.5.4"
+  },
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
+    "babel-plugin-transform-es3-property-literals": "^6.22.0",
+    "babel-plugin-transform-imports": "^1.4.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "important": "^0.0.1",
+    "node-sass": "^4.7.2",
+    "parcel-bundler": "^1.4.1",
+    "postcss-safe-important": "^1.1.0"
+  }
+}
