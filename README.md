@@ -1,5 +1,6 @@
 ## giveaway
 
+Example: https://takashi.github.io/giveaway (Need to install Metamask or Mist)
 
 the browser widget that can send ERC20 standard token.
 
